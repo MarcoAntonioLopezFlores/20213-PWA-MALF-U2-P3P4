@@ -18,7 +18,7 @@ function cleanCache(cacheName, sizeItems) {
 self.addEventListener("install", (event) => {
   const promesaCache = caches.open(CACHE_STATIC_NAME).then((cache) => {
     return cache.addAll([
-      "/",
+      "./",
       "./index.html",
       "./css/page.css",
       "./images/inicio.jpg",
